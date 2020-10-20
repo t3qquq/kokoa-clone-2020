@@ -74,3 +74,54 @@
 .my-message .message__info {
   flex-direction: row-reverse;
 }
+
+.reply {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+}
+.reply__column:first-child {
+  width: 10%;
+}
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply input {
+  border: var(--main-border);
+  border-radius: 20px;
+  padding: 13px;
+  width: 99%;
+}
+
+.reply__column:last-child > i {
+  position: absolute;
+  right: 30px;
+  top: 6px;
+}
+.reply__column:last-child button {
+  top: 2px;
+  right: -18px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--yellow);
+}
+.reply__column:last-child button:focus,
+.reply__column:last-child button:active {
+  outline: none;
+}
+.reply__column:first-child i {
+  opacity: 0.5;
+}

@@ -39,7 +39,7 @@
     </header>
      
     <div class="chat-space"></div>
-    <div class="main-screen main-chat">
+    <main class="main-screen main-chat">
         <div class="chat__time-stamp">
             Tuesday, June 30, 2020
         </div>
@@ -54,14 +54,25 @@
             </div>
         </div>
         <div class="message-row my-message">
-                <div class="message__info">
-                    <span class="message__bubble">안녕하세요~!!</span>
-                    <span class="message__time">21:30</span>
-                </div>
+            <div class="message__info">
+                <span class="message__bubble">안녕하세요~!!</span>
+                <span class="message__time">21:30</span>
             </div>
         </div>
     </main>
 
+    <form class="reply">
+        <div class="reply__column">
+            <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+            <input type='text' placeholder="메세지를 작성해주세요">
+            <i class="far fa-smile fa-2x"></i>
+            <button>
+              <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
 
     <script src="https://kit.fontawesome.com/764824e522.js" crossorigin="anonymous"></script>
 </body>
