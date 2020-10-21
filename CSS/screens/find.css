@@ -91,3 +91,29 @@
   margin-left: 3px;
   font-size: 15px;
 }
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scale(1.5);
+    color: red;
+  }
+  50% {
+    transform: scale(1);
+    color: white;
+  }
+  75% {
+    transform: scale(1.5);
+    color: red;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.open-post__photo:hover i {
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
+}
