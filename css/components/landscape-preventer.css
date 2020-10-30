@@ -9,10 +9,11 @@
   align-items: center;
   top: 0;
   font-size: 32px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 730px) {
   .landscape-preventer {
     display: none;
   }
-} ;
+}
